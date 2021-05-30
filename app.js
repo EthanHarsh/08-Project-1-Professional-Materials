@@ -4,6 +4,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const Project = require('./models/projectModel');
+const nodemailer = require("nodemailer");
+const multiparty = require("multiparty");
 
 //const authRoutes = require('./routes/authRoutes')
 const projectRoutes = require('./routes/projectRoutes');
@@ -30,6 +32,9 @@ app.get('/', async (req, res) =>{
 app.get('/contact', async (req, res) =>{
     res.render('contact.ejs');
 }); 
+
+
+  
 //app.use(authRoutes);
 app.use('/projects', projectRoutes);
 //app.use('/api/v1', APIRoutes);

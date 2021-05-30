@@ -3,7 +3,6 @@
     --background-dark: #212121; /* Gray 900 */
     --background-med: #616161; /* Gray 700 */
     --background-light: #757575; /* Gray 600 */
-    --background-nav: #9E9E9E; /* Gray 500 */
 
     --background-secondary-dark: #0277BD; /* Light Blue 800 */
 
@@ -35,31 +34,6 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
     transition: all 0.1s ease-in-out;
-}
-
-body {
-    background-color: var(--background-dark);
-}
-
-nav {
-    position: fixed;
-    display: flex;
-    left: 0px;
-    top: 0px;
-    height: 7vh;
-    width: 100vw;
-    font-size: large;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--background-nav);
-    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-    z-index: 999;
-}
-
-.nav-holder {
-    height: 7vh;
-    width: 100%;
 }
 
 a {
@@ -98,6 +72,11 @@ h2 {
 
 main {
     width: 100vw;
+}
+
+.name-logo {
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 .fourohfour {

@@ -14,7 +14,7 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap" rel="stylesheet"> 
     <title>Contact Me</title>
 
   </head>
@@ -40,39 +40,22 @@
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/EthanHarsh" target="_blank">GitHub</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fab fa-twitter"></i>
+              <a class="nav-link waves-effect waves-light" href="https://www.linkedin.com/in/ethanharsh/"  target="_blank">
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fab fa-google-plus-g"></i>
+              <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/ethan.harsh.9/"  target="_blank">
+                <i class="fab fa-facebook-f"></i>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                aria-labelledby="navbarDropdownMenuLink-333">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="https://soundcloud.com/ethan_harsh"  target="_blank">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
             </li>
           </ul>
         </div>
@@ -80,6 +63,9 @@
       <!--/.Navbar -->
 
     <main>
+      <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+        <strong>Holy guacamole the form doesn't work!</strong> It's pretty late. I'm gonna get this in the morning. 😴
+      </div>
         <!--Section: Contact v.2-->
         <section class="mb-5 container stylish-color-dark mt-5 contact-me ms-2 me-2">
             <div class="unique-color pt-3 pb-1 headline">
@@ -92,7 +78,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <form id="contact-form" name="contact-form" action="send" method="POST" enctype = "multipart/form-data">
 
                         <!--Grid row-->
                         <div class="row">
@@ -147,7 +133,7 @@
                     </form>
 
                     <div class="text-center text-md-left">
-                        <a class="btn btn-light text-dark" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        <a class="btn btn-light text-dark" type="submit" value="submit">Send</a>
                     </div>
                     <div class="status"></div>
                 </div>
@@ -184,6 +170,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <script src="script.js"></script>  
+    <script src="send.js"></script>  
   </body>
 </html>

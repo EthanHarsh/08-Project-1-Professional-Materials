@@ -26,6 +26,10 @@ app.get('/', async (req, res) =>{
 
     res.render('index.ejs', {projects: projects});
 }); 
+
+app.get('/contact', async (req, res) =>{
+    res.render('contact.ejs');
+}); 
 //app.use(authRoutes);
 app.use('/projects', projectRoutes);
 //app.use('/api/v1', APIRoutes);

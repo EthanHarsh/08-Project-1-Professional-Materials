@@ -126,29 +126,8 @@
             </div>
         </section>
 
-        <section class="flexbox-wrap main-content">
-            <% var project1 = projects[0].heroimg %>
-            <% projects.forEach(project => { %>
-                <div class="card <%= project.slug %>">
-                    <style>
-                        .card:first-child {
-                            height: 300px;
-                            width: 600px;
-                            background-image: url(<%= project1 %>);
-                            justify-content: space-between;
-                        }
-                    </style>
-                    <figure class="display-box">
-                          <img src="<%= project.heroimg %>" alt="card-img">
-                    </figure>
-                    <div class="info-box">
-                      <h3><strong><%= project.name %></strong></h3>
-                      <p id="hover-hide"><%= project.description %></p>
-                    </div>
-                    <a class="button repo" href="<%= project.repo %>">Git Repository</a>
-                    <a class="button" href="<%= project.url %>">View Project</a>
-                </div> 
-           <% }); %>
+        <section class="flexbox-wrap main-content" id="project-section">
+          
         </section>
     </main>
 

@@ -111,10 +111,6 @@ backdrop-filter: blur( 5.0px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.card:hover .button:first-child {
-  margin-bottom: 0.5rem;
-}
-
 .card:hover .repo {
   display: flex;
   flex-direction: column;
@@ -122,68 +118,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   align-items: center;
 }
 
-/* CARD FIRST CHILD */ 
-.card:first-child .display-box {
-  display: none;
-}
 
-.card:first-child .info-box {
-  height: 66.66%;
-  width: 66.66%;
-  margin-top: 2.5rem;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.card:first-child .button {
-  margin-bottom: 2.5rem;
-  background: hsla(199, 92%, 56%, 0.75);
-  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.card:first-child .button:hover {
-  margin-bottom: 2.5rem;
-  background: var(--btn-background-hover-primary);
-  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.card:first-child .info-box p {
-  color: black;
-  font-size: 1.5rem;
-}
-
-.card:first-child .info-box h3 {
-  color: black;
-  font-size: 2.5rem;
-}
-
-.card:first-child:hover .info-box p {
-  display: none;
-  padding: 0.25rem;
-  color: black;
-  font-size: 1rem;
-}
-
-.card:first-child:hover .info-box p {
-  display: block;
-}
-
-.card:first-child:hover .info-box h3 {
-  font-size: 1.5rem;
-}
-
-.card:first-child:hover .button {
-  height: 125px
-}
 
 
 

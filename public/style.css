@@ -232,7 +232,7 @@ main {
 }
 
 
-#mobile {
+.mobile {
     display: none;
 }
 
@@ -242,7 +242,7 @@ main {
     text-align: center;
 }
 
-#hover-hide {
+.hover-hide {
     margin-bottom: 0.5rem;
 }
 

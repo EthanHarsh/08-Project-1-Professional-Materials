@@ -2,8 +2,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
-const nodemailer = require("nodemailer");
-const multiparty = require("multiparty");
 const app = require('./app');
 
 
@@ -25,51 +23,38 @@ app.listen(port, () => {
     console.log(`App running on port ${port}...`);
 });
 
-const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com", 
-    port: 587,
-    auth: {
+//EMail
+/*
+let transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+      type: 'OAuth2',
       user: process.env.EMAIL,
-      pass: process.env.PASS,
-    },
-  });
+      serviceClient: process.env.SERVICEID,
+      privateKey: process.env.PRIVATEKEY,
+      accessToken: 'ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x',
+      expires: 1484314697598
+  }
+});
 
-// verify connection configuration
-transporter.verify(function (error, success) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Server is ready to take our messages");
-    }
-  });
-  
-app.post("/send", (req, res) => {
-    //1.
-    let form = new multiparty.Form();
-    let data = {};
-    form.parse(req, function (err, fields) {
-      console.log(fields);
-      Object.keys(fields).forEach(function (property) {
-        data[property] = fields[property].toString();
-      });
-  
-      //2. You can configure the object however you want
-      const mail = {
-        from: data.name,
-        to: process.env.EMAIL,
-        subject: data.subject,
-        text: `${data.name} <${data.email}> \n${data.message}`,
-      };
-  
-      //3.
-      transporter.sendMail(mail, (err, data) => {
-        if (err) {
-          console.log(err);
-          res.status(500).send("Something went wrong.");
-        } else {
-          res.status(200).send("Email successfully sent to recipient!");
-        }
-      });
-    });
-  });
-  
+transporter.set('oauth2_provision_cb', (user, renew, callback)=>{
+  let accessToken = userTokens[user];
+  if(!accessToken){
+      return callback(new Error('Unknown user'));
+  }else{
+      return callback(null, accessToken);
+  }
+});
+
+transporter.on('token', token => {
+  console.log('A new access token was generated');
+  console.log('User: %s', token.user);
+  console.log('Access Token: %s', token.accessToken);
+  console.log('Expires: %s', new Date(token.expires));
+});
+
+
+module.exports = transporter;
+*/

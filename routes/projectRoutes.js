@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Project = require('./../controllers/projectController');
 
 router
     .route('/forkify')
@@ -16,5 +17,9 @@ router
 router
     .route('/budgety')
     .get((req, res) => res.render('budgety/index.ejs'));
+
+router
+    .route('/all')
+    .get(Project.getAllProjects)
 
 module.exports = router;

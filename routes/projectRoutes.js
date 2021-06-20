@@ -22,4 +22,16 @@ router
     .route('/all')
     .get(Project.getAllProjects)
 
+router
+    .route('/javascript')
+    .get(Project.getJavascriptProjects);
+
+router
+    .route('/node')
+    .get(Project.getNodeProjects);
+
+router
+    .route('/html_css')
+    .get(Project.getHTMLProjects);
+
 module.exports = router;

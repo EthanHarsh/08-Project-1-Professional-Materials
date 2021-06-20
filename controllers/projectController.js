@@ -36,3 +36,51 @@ exports.getProject= catchAsync(async (req, res, next) => {
         }
     });
 });
+
+exports.getJavascriptProjects = catchAsync(async (req, res,next) => {
+    const projects = await Project.find({type: 'javascript'}).exec();
+    if (!projects) {
+        return next(new AppError('No javascript projects found', 404));
+    }
+
+    res.status(200).json({
+        status:'success',
+        results: projects.length,
+           data: {
+            projects
+           }
+       });
+
+})
+
+exports.getNodeProjects = catchAsync(async (req, res,next) => {
+    const projects = await Project.find({type: 'Node.js'}).exec();
+    if (!projects) {
+        return next(new AppError('No Node.JS Projects Found', 404));
+    }
+
+    res.status(200).json({
+        status:'success',
+        results: projects.length,
+           data: {
+            projects
+           }
+       });
+
+})
+
+exports.getHTMLProjects = catchAsync(async (req, res,next) => {
+    const projects = await Project.find({type: 'HTML/CSS'}).exec();
+    if (!projects) {
+        return next(new AppError('No HTML/CSS Projects Found', 404));
+    }
+
+    res.status(200).json({
+        status:'success',
+        results: projects.length,
+           data: {
+            projects
+           }
+       });
+
+})

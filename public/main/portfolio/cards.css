@@ -41,6 +41,7 @@
   border: 1px solid var(--border-light);
   width: 275px;
   height: 117px;
+  overflow: hidden;
 }
 
 .info-box h3 {

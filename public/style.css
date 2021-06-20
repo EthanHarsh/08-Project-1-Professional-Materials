@@ -246,6 +246,11 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.row-margins {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 
 /*Small devices */
 @media (max-width: 780px) { 

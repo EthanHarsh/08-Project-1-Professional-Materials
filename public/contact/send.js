@@ -1,24 +1,9 @@
-//get the form by its id
-const form = document.getElementById("contact-form"); 
-console.log('form: ' + form)
-//1.
-const formEvent = form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  //2.
-  let mail = new FormData(form);
-  console.log(mail);
-  //3.
-  const sendMail = (mail) => {
-    //1.
-    console.log('sending!')
-    fetch("/send", {
-      method: "post", //2.
-      body: mail, //3.
-    }).then((response) => {
-
-      return response.json();
-    });
-  };
-  
+$('#contact-button').click(() => {
+  //console.log('contactbutton clieck')
+  $.post("/email/v1/send", $('#contact-form').serialize(), () => {
+      console.log('sent');
+  })
+  $('#contact-form').addClass('d-none');
+  $('#contact-button').addClass('d-none');
+  $('#status').removeClass('d-none');
 })

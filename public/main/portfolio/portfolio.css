@@ -30,3 +30,26 @@
     background-image: url(/img/hw1.png);
 }
 
+.ethan-harsh-portfolio-homework-2:hover {
+    background-image: url(/img/hw2.png);
+}
+
+.javascript-password-generator:hover {
+    background-image: url(/img/03-javascript-homework-demo.png);
+}
+
+.web-apis-code-quiz:hover {
+    background-image: url(/img/javascript_quiz1.png);
+}
+
+.third-party-apis-work-day-scheduler:hover {
+    background-image: url(/img/scheduler.png);
+}
+
+.server-side-apis-weather-dashboard:hover {
+    background-image: url(/img/weather.png);    
+}
+
+.a-drink-around-here:hover {
+    background-image: url(/img/project1.png);     
+}

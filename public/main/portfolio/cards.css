@@ -97,19 +97,19 @@
 }
 
 .card:hover .button:hover {
-background: var(--btn-background-hover-primary);
-box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-backdrop-filter: blur( 5.0px );
-  -webkit-backdrop-filter: blur( 5.0px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card:hover .button:focus {
-background: var(--btn-background-hover-primary);
-box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-backdrop-filter: blur( 5.0px );
-  -webkit-backdrop-filter: blur( 5.0px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card:hover .repo {

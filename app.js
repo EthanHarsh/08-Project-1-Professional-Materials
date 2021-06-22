@@ -41,6 +41,7 @@ app.get('/contact', async (req, res) =>{
   
 //app.use(authRoutes);
 app.use('/api/v1/projects', projectRoutes);
+app.use('/projects', projectRoutes);
 app.use('/email/v1', emailRoutes);
 //app.use('/api/v1', APIRoutes);
 app.use((req, res, next) => {

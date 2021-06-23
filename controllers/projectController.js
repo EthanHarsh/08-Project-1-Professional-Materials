@@ -84,3 +84,19 @@ exports.getHTMLProjects = catchAsync(async (req, res,next) => {
        });
 
 })
+
+exports.getFeaturedProjects = catchAsync(async (req, res,next) => {
+    const projects = await Project.find({featured: '1'}).exec();
+    if (!projects) {
+        return next(new AppError('No HTML/CSS Projects Found', 404));
+    }
+
+    res.status(200).json({
+        status:'success',
+        results: projects.length,
+           data: {
+            projects
+           }
+       });
+
+})

@@ -38,7 +38,7 @@
     background-image: url(/img/03-javascript-homework-demo.png);
 }
 
-.web-apis-code-quiz:hover {
+.web-apis-code-quiz {
     background-image: url(/img/javascript_quiz1.png);
 }
 
@@ -46,10 +46,10 @@
     background-image: url(/img/scheduler.png);
 }
 
-.server-side-apis-weather-dashboard:hover {
+.server-side-apis-weather-dashboard {
     background-image: url(/img/weather.png);    
 }
 
-.a-drink-around-here:hover {
+.a-drink-around-here {
     background-image: url(/img/project1.png);     
 }

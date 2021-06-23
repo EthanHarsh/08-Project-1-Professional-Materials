@@ -34,4 +34,8 @@ router
     .route('/html_css')
     .get(Project.getHTMLProjects);
 
+router
+    .route('/featured')
+    .get(Project.getFeaturedProjects);
+
 module.exports = router;

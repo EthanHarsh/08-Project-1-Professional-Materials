@@ -78,8 +78,8 @@
   height: auto;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -91,24 +91,24 @@
 .card:hover .button {
   background: hsla(199, 92%, 56%, 0.75);
   box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card:hover .button:hover {
   background: var(--btn-background-hover-primary);
   box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card:hover .button:focus {
   background: var(--btn-background-hover-primary);
   box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
-  backdrop-filter: blur( 5.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -119,8 +119,139 @@
   align-items: center;
 }
 
+/* CARD FEATURED */ 
+.featured {
+  height: 300px;
+  width: 600px;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.featured p {
+  font-size: 1.25rem !important;
+}
+
+.featured .display-box {
+  display: none;
+}
+
+.featured .info-box {
+  height: 66.66%;
+  width: 66.66%;
+  margin-top: 2.5rem;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .button {
+  margin-bottom: 2.5rem;
+  background: hsla(199, 92%, 56%, 0.75);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .button:hover {
+  margin-bottom: 2.5rem;
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .info-box p {
+  color: black;
+  font-size: 1rem;
+}
+
+.featured .info-box h3 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.featured:hover .info-box p {
+  display: none;
+}
+
+.featured:hover .info-box h3 {
+  font-size: 1.5rem;
+}
+
+.featured:hover .info-box  {
+  height: auto;
+}
 
 
+@media (max-width: 780px) { 
+  .featured {
+    justify-content: space-between;
+    transition: all 0.5s;
+  }
+  
+  .featured p {
+    font-size: 1rem !important;
+  }
+  
+  .featured .display-box {
+    display: none;
+  }
+  
+  .featured .info-box {
+    height: 66.66%;
+    width: 66.66%;
+    margin-top: 2.5rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 10.0px );
+      -webkit-backdrop-filter: blur( 10.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .button {
+    margin-bottom: 2.5rem;
+    background: hsla(199, 92%, 56%, 0.75);
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 5.0px );
+      -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .button:hover {
+    margin-bottom: 2.5rem;
+    background: var(--btn-background-hover-primary);
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 5.0px );
+      -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .info-box p {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .featured .info-box h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  .featured:hover .info-box p {
+    display: none;
+  }
+  
+  .featured:hover .info-box h3 {
+    font-size: 1rem;
+  }
+  
+  .featured:hover .info-box  {
+    height: auto;
+  }
+}
 
 
 

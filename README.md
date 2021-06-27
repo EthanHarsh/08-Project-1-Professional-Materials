@@ -1,7 +1,8 @@
 # Ethan Harsh Portfolio (HW2)
 ![Node.js Badge](https://img.shields.io/badge/JavaScript-Node.js-green) ![Advanced CSS Badge](https://img.shields.io/badge/CSS-Advanced-green) ![EJS Badge](https://img.shields.io/badge/EJS-Templates-green) ![OSU Bootcamp Badge](https://img.shields.io/badge/OSU-Bootcampw-red)
 
-This project was initially started before the bootcamp began.  I initially focused on developing the backend API.  As of this REPO it is not finished, so it has been removed.  This REPO is designed to create the first version of my development portfolio frontend.
+
+![Application Screenshot](public/img/screenshot.png)
 
 ## Description
 I needed a portfolio to display my development work.  I decided to build the portfolio using Node.js, Express, & EJS.

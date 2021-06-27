@@ -1,6 +1,8 @@
 # Ethan Harsh Portfolio (HW8)
 ![Node.js Badge](https://img.shields.io/badge/JavaScript-Node.js-green) ![Advanced CSS Badge](https://img.shields.io/badge/CSS-Advanced-green) ![EJS Badge](https://img.shields.io/badge/EJS-Templates-green) ![OSU Bootcamp Badge](https://img.shields.io/badge/OSU-Bootcamp-red)
 
+## Deployed Application
+[Portfolio](https://ethanharsh.com)
 
 ![Application Screenshot](public/img/screenshot.png)
 
